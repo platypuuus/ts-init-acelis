@@ -56,10 +56,10 @@ export class TableHTML {
     list.appendChild(tbodyLine);
 
     for (const name of this.listContent) {
-      const trLine2: HTMLElement = document.createElement("tr");
-      const tdLine: HTMLElement = document.createElement("td");
+      const trLine2: HTMLTableRowElement = document.createElement("tr");
+      const tdLine: HTMLTableCellElement = document.createElement("td");
       tdLine.textContent = name.name;
-      const tdLine2: HTMLElement = document.createElement("td");
+      const tdLine2: HTMLTableCellElement = document.createElement("td");
       tdLine2.textContent = name.firstName;
       tbodyLine.appendChild(trLine2);
       trLine2.appendChild(tdLine);
